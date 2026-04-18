@@ -1,0 +1,30 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--dark-bg);
+  color: #fff;
+}
+
+.home{
+  height: 2000px;
+  background-color: var(--dark);
+}
+
+.services {
+  height: 2000px;
+  background-color: var(--light);
+}
+
+.contact {
+  height: 2000px;
+  background-color: var(--lighter);
+}
+
+.footer {
+  height: 200px;
+  background-color: var(--dark-bg);
+}
