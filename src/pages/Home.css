@@ -1,0 +1,45 @@
+.home {
+  height: fit-content;
+  padding-top: 70px;
+  background-color: var(--bg);
+}
+
+.home-header {
+  height: 600px;
+}
+
+.home-content {
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: left;
+  color: #fff;
+  background-color: var(--darker);
+}
+
+.home-content p {
+  padding: 0 10px 0 30px;
+}
+
+.home-content h2 {
+  color: var(--light);
+}
+
+.cvac-tooltip {
+  display: inline-block;
+}
+
+@media (min-width: 1048px) {
+  .home {
+    padding-top: 150px;
+  }
+
+  .home-header {
+    height: 500px;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-content p {
+    padding: 0 0px;
+  }
+}
