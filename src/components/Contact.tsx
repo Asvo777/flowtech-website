@@ -25,7 +25,7 @@ export default function Contact() {
         <div className='contact-card contact-card--hours'>
           <h3><FaClock className='contact-icon' /> Heures d’ouverture</h3>
           <ul className='contact-hours'>
-            <li><span>Lundi au vendredi</span><strong>8h00 à 18h00</strong></li>
+            <li><span>Lundi au vendredi</span><strong>8h00 à 20h00</strong></li>
             <li><span>Samedi</span><strong>Sur rendez-vous</strong></li>
             <li><span>Dimanche</span><strong>Fermé</strong></li>
           </ul>
