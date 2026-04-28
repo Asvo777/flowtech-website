@@ -1,23 +1,46 @@
 .home {
+  position: relative;
   height: fit-content;
   padding-top: 70px;
-  background-color: var(--bg);
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: -1;
+  background-image: url('./home-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
+
+/* reset header margins so they don't create unexpected gaps */
+.home-header h1, h3 {
+  margin: 0 0 70px 0;
+  color: var(--darker);
+}
+
+.scrolled.bg-image {
+  opacity: 0.9;
 }
 
 .home-header {
-  height: 600px;
+  padding: 150px 0;
+  height: 500px;
 }
 
 .home-content {
-  margin: 0 auto;
-  padding: 50px 20px;
+  padding: 70px 20px 50px 30px;
   text-align: left;
   color: #fff;
   background-color: var(--darker);
 }
 
 .home-content p {
-  padding: 0 10px 0 30px;
+  padding: 10px 30px;
 }
 
 .home-content h2 {
@@ -35,6 +58,11 @@
 
   .home-header {
     height: 500px;
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 70px;
   }
 }
 

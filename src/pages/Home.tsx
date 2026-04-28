@@ -1,10 +1,31 @@
 import Services from "../components/Services";
 import Contact from "../components/Contact";
+import { useEffect } from 'react'
 import './Home.css'
 
 export default function Home() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const bg = document.querySelector('.bg-image');
+      if (window.scrollY > 50) {
+        bg?.classList.add('scrolled');
+      } else {
+        bg?.classList.remove('scrolled');
+      }
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+
   return (
     <div className='home'>
+      <div className='bg-image'></div>
       <div className='home-header'>
         <h1>
           Experts en nettoyage de conduits et systèmes{' '}
@@ -26,8 +47,6 @@ export default function Home() {
         </span>
         <img src="" alt="" />
       </div>
-
-      <br />
 
       <Services/>
       <Contact/>

@@ -12,12 +12,13 @@ export default function Services() {
         <img id="service-img" src="/Air-Duct-Cleaning.png" alt="" />
         <span className='services-text'>
         <h2>Nos services</h2>
-          <ul className='services-list'>
+          <ul className='services-list' id="services-name">
             <li>Nettoyage de conduits de ventilation résidentiels</li>
             <li>Nettoyage de thermopompes murales</li>
             <li>Inspection et entretien CVAC</li>
             <li>Amélioration de la qualité de l’air</li>
           </ul>
+        <button className="contact-button">En savoir plus</button>
         </span>
       </div>
       <div id="why-choose" className='services-content'>
