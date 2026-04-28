@@ -67,13 +67,17 @@
   color: #fff;
 }
 
+#button-appointment {
+  min-width: 120px;
+}
+
 @media (min-width: 1048px) {
   .logo {
     top: -15px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 520px) {
   .navbar {
     display: flex;
     align-items: center;
@@ -84,13 +88,13 @@
   }
 
   .navbar-links {
-    gap: 8px;
+    gap: 3px;
     padding: 10px 0;
   }
 
   .navbar-links button {
     border: 1px solid var(--text);
-    padding: 8px 14px;
+    padding: 8px 7px;
     font-size: 0.9rem;
   }
 

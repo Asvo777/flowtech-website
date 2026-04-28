@@ -95,7 +95,7 @@
   margin-right: 35px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 520px) {
   #service-img {
     width: 100%;
   }

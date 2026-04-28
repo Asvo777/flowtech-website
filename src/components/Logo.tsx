@@ -19,7 +19,7 @@ export default function Logo() {
 
   useEffect(() => {
     const onResize = () => {
-      setIsNarrowScreen(window.innerWidth < 420)
+      setIsNarrowScreen(window.innerWidth < 520)
     }
 
     onResize()

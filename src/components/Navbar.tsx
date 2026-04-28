@@ -59,6 +59,12 @@ export default function Navbar() {
       </div>
       <div className='navbar-links'>
         {/*   <span style={{ width: '700px' }}></span> */}
+        <button 
+        id='button-appointment'
+        onClick={() => navigate('/appointment')}
+        >
+          {t.navbar.takeAppointment}
+        </button>
         <button
           onClick={() => {
             const contactSection = document.querySelector('.contact')
