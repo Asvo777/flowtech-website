@@ -58,6 +58,7 @@ export default function Navbar() {
         <img className='navbar-logo' src={logoSrc} alt='FlowTech' />
       </div>
       <div className='navbar-links'>
+        <button onClick={() => { navigate('/services'); setTimeout(() => scrollToTop(), 80) }}>{t.services.title}</button>
         {/*   <span style={{ width: '700px' }}></span> */}
         <button
           onClick={() => {

@@ -28,8 +28,8 @@
 }
 
 .home-header {
-  padding: 150px 0;
-  height: 500px;
+  padding: 200px 0;
+  height: 600px;
 }
 
 .home-content {
@@ -51,6 +51,36 @@
   display: inline-block;
 }
 
+.ac-image-frame {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  width: min(100%, 460px);
+  margin: 16px 0;
+}
+
+.ac-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 240ms ease;
+}
+
+.ac-img--open {
+  position: absolute;
+  inset: 0;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+}
+
 @media (min-width: 1048px) {
   .home {
     padding-top: 150px;
@@ -69,5 +99,10 @@
 @media (max-width: 420px) {
   .home-content p {
     padding: 0 0px;
+  }
+
+  .ac-image-frame {
+    width: 100%;
+    max-width: 340px;
   }
 }

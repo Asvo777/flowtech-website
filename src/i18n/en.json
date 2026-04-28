@@ -62,5 +62,25 @@
   "footer": {
     "tagline": "Duct, heat pump and HVAC system cleaning.",
     "copyright": "All rights reserved."
+  },
+  "details": {
+    "title": "Our services",
+    "paragraph1": "Explore our main specialized cleaning services to improve system performance and the quality of your indoor air.",
+    "service1": {
+      "name": "Complete heat pump cleaning service",
+      "description": "A full cleaning designed to improve your heat pump performance and extend its lifespan.",
+      "price": "$179"
+    },
+    "service2": {
+      "name": "Dryer vent cleaning service",
+      "description": "A safe vent cleaning service that helps reduce buildup and improve dryer efficiency.",
+      "price": "$40"
+    },
+    "service3": {
+      "name": "Air exchanger cleaning service",
+      "description": "A precise air exchanger cleaning service that supports better airflow and healthier air.",
+      "price": "$179"
+    },
+    "discountNote": "*Discount applies when selecting multiple services."
   }
 }

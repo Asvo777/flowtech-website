@@ -62,5 +62,25 @@
   "footer": {
     "tagline": "Nettoyage de conduits, thermopompes et systèmes CVAC.",
     "copyright": "Tous droits réservés."
+  },
+  "details": {
+    "title": "Nos services",
+    "paragraph1": "Découvrez nos principaux services de nettoyage spécialisés pour améliorer la performance de votre système et la qualité de votre air intérieur.",
+    "service1": {
+      "name": "Service de nettoyage complet de thermopompes",
+      "description": "Un nettoyage complet pour optimiser le rendement de votre thermopompe et prolonger sa durée de vie.",
+      "price": "179 $"
+    },
+    "service2": {
+      "name": "Service de nettoyage de conduit de sécheuses",
+      "description": "Un nettoyage sécuritaire du conduit de sécheuse pour réduire les risques d'accumulation et améliorer l'efficacité.",
+      "price": "40 $"
+    },
+    "service3": {
+      "name": "Service de nettoyage d'échangeur d'air",
+      "description": "Un entretien précis de l'échangeur d'air pour favoriser une meilleure circulation et un air plus sain.",
+      "price": "179 $"
+    },
+    "discountNote": "*Rabais applicable pour la sélection de plusieurs services."
   }
 }

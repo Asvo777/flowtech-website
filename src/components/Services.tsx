@@ -2,17 +2,31 @@ import { RiCustomerServiceLine } from "react-icons/ri";
 import { PiToolboxDuotone } from "react-icons/pi";
 import { TbRulerMeasure } from "react-icons/tb";  
 import { RiMentalHealthLine } from "react-icons/ri";
+import { useNavigate } from 'react-router-dom'
 import './Services.css'
 import { useI18n } from '../i18n'
 
 
 export default function Services() {
   const { t } = useI18n()
+  const navigate = useNavigate()
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+
+  const handleLogoClick = () => {
+    // Navigate to home first, then scroll to top after route change
+    navigate('/services')
+    // Give the router a moment to render the home route, then scroll
+    setTimeout(() => scrollToTop(), 80)
+  }
 
   return (
     <div className='services'>
       <div className='services-content'>
-        <img id="service-img" src="/Air-Duct-Cleaning.png" alt="" />
+        <img id="service-img" src="/flowtech-personal.png" alt="" />
         <span className='services-text'>
         <h2>{t.services.title}</h2>
           <ul className='services-list' id="services-name">
@@ -22,16 +36,10 @@ export default function Services() {
           </ul>
         <button className="contact-button"
           onClick={() => {
-            const contactSection = document.querySelector('.contact')
-            const navbar = document.querySelector('.navbar') as HTMLElement | null
-
-            if (contactSection instanceof HTMLElement) {
-              const navbarHeight = navbar?.offsetHeight ?? 0
-              const y = contactSection.getBoundingClientRect().top + window.scrollY - navbarHeight
-
-              window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' })
-            }
+            handleLogoClick()
           }}
+          
+
         >{t.services.learnMore}</button>
         </span>
       </div>

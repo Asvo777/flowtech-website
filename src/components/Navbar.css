@@ -25,15 +25,14 @@
   display: grid;
   width: clamp(110px, 18vw, 320px);
   max-width: 42vw;
-  height: min-content;
+  height: auto;
   cursor: pointer;
 }
 
 .navbar-logo {
-  display: inline;
+  display: block;
   width: 100%;
   height: auto;
-  height: min-content;
 }
 
 .navbar-links {
@@ -98,6 +97,12 @@
     top: 20px;
     width: clamp(150px, 30vw, 260px);
     max-width: 21vw;
+    max-height: 50px;
+  }
+
+  .navbar-logo {
+    max-height: 50px;
+    object-fit: contain;
   }
 }
 

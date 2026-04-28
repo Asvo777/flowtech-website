@@ -1,10 +1,12 @@
 import Services from "../components/Services";
 import Contact from "../components/Contact";
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './Home.css'
 import { useI18n } from '../i18n'
 
 export default function Home() {
+  const [isACHovered, setIsACHovered] = useState(false)
+
   const { t } = useI18n()
 
   useEffect(() => {
@@ -43,10 +45,26 @@ export default function Home() {
         <span>
           <h2>{t.home.qualityTitle}</h2>
         <p>{t.home.paragraph1}</p>
-    <br />
+          <br/>
         <p>{t.home.paragraph2}</p>
         </span>
-        <img src="" alt="" />
+
+        <div
+            className='ac-image-frame'
+            onMouseEnter={() => setIsACHovered(true)}
+            onMouseLeave={() => setIsACHovered(false)}
+          >
+            <img
+              src='/closed-ac.png'
+              alt='Closed AC unit'
+              className={`ac-img ac-img--closed ${isACHovered ? 'is-hidden' : 'is-visible'}`}
+            />
+            <img
+              src='/opened-ac.png'
+              alt='Open AC unit'
+              className={`ac-img ac-img--open ${isACHovered ? 'is-visible' : 'is-hidden'}`}
+            />
+          </div>
       </div>
 
       <Services/>
