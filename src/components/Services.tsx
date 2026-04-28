@@ -5,11 +5,13 @@ import { RiMentalHealthLine } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom'
 import './Services.css'
 import { useI18n } from '../i18n'
+import { useEffect } from "react";
 
 
 export default function Services() {
   const { t } = useI18n()
   const navigate = useNavigate()
+
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -23,10 +25,43 @@ export default function Services() {
     setTimeout(() => scrollToTop(), 80)
   }
 
+  useEffect(() => {
+    const elements = document.querySelectorAll<HTMLElement>('.fade-in')
+    const texts = document.querySelectorAll('#why-choose li')
+
+    if (!elements.length) return
+
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+          observerInstance.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.5 })
+    const observer2 = new IntersectionObserver((entries, observerInstance) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+          observerInstance.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.2 })
+
+    
+    elements.forEach((el) => observer.observe(el))
+    texts.forEach((el) => observer2.observe(el))
+
+    return () => {
+      observer.disconnect()
+      observer2.disconnect()
+    }
+  }, [])
+
   return (
     <div className='services'>
       <div className='services-content'>
-        <img id="service-img" src="/flowtech-personal.png" alt="" />
+        <img id="service-img" className="fade-in" src="/flowtech-personal.png" alt="" />
         <span className='services-text'>
         <h2>{t.services.title}</h2>
           <ul className='services-list' id="services-name">

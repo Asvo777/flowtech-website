@@ -38,7 +38,7 @@
 
 .contact-intro {
   max-width: 760px;
-  margin: 16px auto 0;
+  margin: 16px auto 20px;
   color: rgba(1, 28, 86, 0.82);
   font-size: 1.08rem;
   line-height: 1.7;
@@ -93,10 +93,45 @@
   font-size: 1.3rem;
 }
 
+.contact-phones h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
 .contact-icon {
   flex: 0 0 auto;
   color: var(--light);
-  font-size: 1rem;
+  font-size: 1.8rem;
+}
+
+.phone {
+  animation: vibrate 2s ease-in-out infinite;
+}
+
+@keyframes vibrate {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(-10deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  35% {
+    transform: rotate(10deg);
+  }
+  45% {
+    transform: rotate(0);
+  }
 }
 
 .contact-buttons,
@@ -266,4 +301,7 @@
     font-weight: 700;
     margin: 0;
   }
+  .contact-icon {
+  font-size: 1.3rem;
+}
 }

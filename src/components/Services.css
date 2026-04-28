@@ -47,6 +47,30 @@
   border: var(--dark) 5px solid;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.pop-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.pop-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
 .contact-button {
   font-size: large;
   display: inline-flex;
@@ -87,6 +111,16 @@
   line-height: 40px;
   display: flex;
   align-items: center;
+  transform-origin: right;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 0.5s ease, transform 0.5s ease, margin-right 0.5s ease;
+}
+
+#why-choose li.visible {
+  margin-right: 20px;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .icon-services {

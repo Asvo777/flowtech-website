@@ -72,7 +72,7 @@ export default function Contact() {
         </p>
         
         <div className='contact-phones'>
-          <h3><FaPhoneAlt className='contact-icon' /> {t.contact.callFlowTech}</h3>
+          <h3><FaPhoneAlt className='contact-icon phone' /> {t.contact.callFlowTech}</h3>
           <div className='contact-buttons'>
             <a className='contact-button' href='tel:8733070314'>873-307-0314</a>
             <a className='contact-button' href='tel:8736602686'>873-660-2686</a>
