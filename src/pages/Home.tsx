@@ -37,6 +37,7 @@ export default function Home() {
           </span>
         </h1>
         <h3>{t.home.subtitle}</h3>
+        
       </div>
       <div className='home-content'>
         <span>

@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Navbar.css'
 import { useI18n } from '../i18n'
 
@@ -38,12 +39,21 @@ export default function Navbar() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  const navigate = useNavigate()
+
+  const handleLogoClick = () => {
+    // Navigate to home first, then scroll to top after route change
+    navigate('/')
+    // Give the router a moment to render the home route, then scroll
+    setTimeout(() => scrollToTop(), 80)
+  }
+
   return (
     <div className='navbar'>
-      <div 
+      <div
       className='logo'
       aria-label={t.navbar.ariaBackToTop}
-      onClick={scrollToTop}
+      onClick={handleLogoClick}
       >
         <img className='navbar-logo' src={logoSrc} alt='FlowTech' />
       </div>

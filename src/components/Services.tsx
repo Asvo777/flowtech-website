@@ -20,7 +20,19 @@ export default function Services() {
               <li key={item}>{item}</li>
             ))}
           </ul>
-        <button className="contact-button">{t.services.learnMore}</button>
+        <button className="contact-button"
+          onClick={() => {
+            const contactSection = document.querySelector('.contact')
+            const navbar = document.querySelector('.navbar') as HTMLElement | null
+
+            if (contactSection instanceof HTMLElement) {
+              const navbarHeight = navbar?.offsetHeight ?? 0
+              const y = contactSection.getBoundingClientRect().top + window.scrollY - navbarHeight
+
+              window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' })
+            }
+          }}
+        >{t.services.learnMore}</button>
         </span>
       </div>
       <div id="why-choose" className='services-content'>

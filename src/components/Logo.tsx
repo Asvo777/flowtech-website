@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import type { KeyboardEvent } from 'react'
 
 export default function Logo() {
@@ -11,7 +12,8 @@ export default function Logo() {
   const onLogoKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault()
-      scrollToTop()
+      navigate('/')
+      setTimeout(() => scrollToTop(), 80)
     }
   }
 
@@ -30,13 +32,18 @@ export default function Logo() {
 
   const logoSrc = isNarrowScreen ? '/flowtech_logo_no_bg.png' : '/FlowTech.png'
 
+  const navigate = useNavigate()
+
   return (
     <div
       className='logo'
       role='button'
       tabIndex={0}
       aria-label='Retour en haut de la page'
-      onClick={scrollToTop}
+      onClick={() => {
+        navigate('/')
+        setTimeout(() => scrollToTop(), 80)
+      }}
       onKeyDown={onLogoKeyDown}
     >
       <img className='navbar-logo' src={logoSrc} alt='FlowTech' />
