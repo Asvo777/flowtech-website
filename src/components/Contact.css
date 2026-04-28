@@ -204,6 +204,28 @@
   cursor: pointer;
 }
 
+.contact-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+  box-shadow: 0 8px 16px rgba(16, 156, 230, 0.14);
+}
+
+.contact-sent-popover {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(1, 28, 86, 0.92);
+  color: #fff;
+  font-weight: 700;
+  z-index: 1000;
+  box-shadow: 0 12px 24px rgba(1, 28, 86, 0.24);
+}
+
 @media (max-width: 1024px) {
   .contact-card {
     grid-column: span 6;

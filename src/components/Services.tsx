@@ -3,39 +3,41 @@ import { PiToolboxDuotone } from "react-icons/pi";
 import { TbRulerMeasure } from "react-icons/tb";  
 import { RiMentalHealthLine } from "react-icons/ri";
 import './Services.css'
+import { useI18n } from '../i18n'
 
 
 export default function Services() {
+  const { t } = useI18n()
+
   return (
     <div className='services'>
       <div className='services-content'>
         <img id="service-img" src="/Air-Duct-Cleaning.png" alt="" />
         <span className='services-text'>
-        <h2>Nos services</h2>
+        <h2>{t.services.title}</h2>
           <ul className='services-list' id="services-name">
-            <li>Nettoyage de conduits de ventilation résidentiels</li>
-            <li>Nettoyage de thermopompes murales</li>
-            <li>Inspection et entretien CVAC</li>
-            <li>Amélioration de la qualité de l’air</li>
+            {t.services.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
-        <button className="contact-button">En savoir plus</button>
+        <button className="contact-button">{t.services.learnMore}</button>
         </span>
       </div>
       <div id="why-choose" className='services-content'>
-        <h2>Pourquoi choisir FlowTech ?</h2>
+        <h2>{t.services.whyChoose}</h2>
         <ul className='services-list'>
           <li>
             <span className="icon-services"><RiCustomerServiceLine /></span> 
-          Service professionnel et fiable</li>
+          {t.services.reasons[0]}</li>
           <li>
             <span className="icon-services"><PiToolboxDuotone /></span> 
-          Équipement à la fine pointe</li>
+          {t.services.reasons[1]}</li>
           <li>
             <span className="icon-services"><TbRulerMeasure /></span> 
-          Résultats visibles et mesurables</li>
+          {t.services.reasons[2]}</li>
           <li>
             <span className="icon-services"><RiMentalHealthLine /></span> 
-          Approche axée sur la santé et l’efficacité
+          {t.services.reasons[3]}
           </li>
         </ul>
       </div>

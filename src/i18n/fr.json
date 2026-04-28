@@ -1,0 +1,65 @@
+{
+  "navbar": {
+    "ariaBackToTop": "Retour en haut de la page",
+    "contactUs": "Contactez-nous",
+    "languageSwitch": "EN"
+  },
+  "home": {
+    "titlePrefix": "Experts en nettoyage de conduits et systèmes",
+    "titleCvac": "CVAC",
+    "subtitle": "Résidentiels et commerciaux",
+    "qualityTitle": "Améliorez la qualité de votre air intérieur",
+    "paragraph1": "L'accumulation de poussière, moisissures, allergènes et contaminants dans vos conduits peut nuire à votre santé et réduire l'efficacité énergétique de vos systèmes. Un entretien régulier de vos conduits permet non seulement d'améliorer la qualité de l'air intérieur, mais aussi de prolonger la durée de vie de vos installations.",
+    "paragraph2": "Chez FlowTech, nous offrons des services spécialisés en nettoyage de conduits de ventilation et de thermopompes afin d'assurer un air plus sain, une meilleure performance de vos systèmes et une efficacité énergétique optimale. Nous utilisons des équipements professionnels et des techniques avancées pour éliminer poussière, moisissures, allergènes et contaminants accumulés dans vos conduits."
+  },
+  "services": {
+    "title": "Nos services",
+    "items": [
+      "Nettoyage de conduits de ventilation résidentiels",
+      "Nettoyage de thermopompes murales",
+      "Inspection et entretien CVAC",
+      "Amélioration de la qualité de l'air"
+    ],
+    "learnMore": "En savoir plus",
+    "whyChoose": "Pourquoi choisir FlowTech ?",
+    "reasons": [
+      "Service professionnel et fiable",
+      "Équipement à la fine pointe",
+      "Résultats visibles et mesurables",
+      "Approche axée sur la santé et l'efficacité"
+    ]
+  },
+  "contact": {
+    "title": "Parlons de votre air intérieur",
+    "intro": "Contactez-nous dès aujourd'hui par téléphone ou par courriel pour obtenir une soumission rapide et sans engagement.",
+    "callFlowTech": "Appeler FlowTech",
+    "hoursTitle": "Heures d'ouverture",
+    "status": {
+      "open": "OUVERT",
+      "appointmentOnly": "RENDEZ-VOUS SEULEMENT",
+      "closed": "FERMÉ"
+    },
+    "days": {
+      "mondayToFriday": "Lundi au vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche"
+    },
+    "hours": {
+      "weekday": "8h00 à 20h00",
+      "saturday": "Sur rendez-vous",
+      "sunday": "Fermé"
+    },
+    "messageTitle": "Envoyez-nous un message",
+    "messageSent": "Message envoyé",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre adresse courriel",
+      "message": "Votre message",
+      "send": "Envoyer"
+    }
+  },
+  "footer": {
+    "tagline": "Nettoyage de conduits, thermopompes et systèmes CVAC.",
+    "copyright": "Tous droits réservés."
+  }
+}

@@ -1,9 +1,11 @@
 
 import { useEffect, useState } from 'react'
 import './Navbar.css'
+import { useI18n } from '../i18n'
 
 export default function Navbar() {
-  const [isNarrowScreen, setIsNarrowScreen] = useState(false);
+  const [isNarrowScreen, setIsNarrowScreen] = useState(false)
+  const { t, toggleLocale } = useI18n()
 
   useEffect(() => {
       const onResize = () => {
@@ -40,7 +42,7 @@ export default function Navbar() {
     <div className='navbar'>
       <div 
       className='logo'
-      aria-label='Retour en haut de la page'
+      aria-label={t.navbar.ariaBackToTop}
       onClick={scrollToTop}
       >
         <img className='navbar-logo' src={logoSrc} alt='FlowTech' />
@@ -49,11 +51,18 @@ export default function Navbar() {
         {/*   <span style={{ width: '700px' }}></span> */}
         <button
           onClick={() => {
-            const contactSection = document.querySelector('.contact');
-            contactSection?.scrollIntoView({ behavior: 'smooth' });
+            const contactSection = document.querySelector('.contact')
+            const navbar = document.querySelector('.navbar') as HTMLElement | null
+
+            if (contactSection instanceof HTMLElement) {
+              const navbarHeight = navbar?.offsetHeight ?? 0
+              const y = contactSection.getBoundingClientRect().top + window.scrollY - navbarHeight
+
+              window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' })
+            }
           }}
-        >Contactez-nous</button>
-        <button>EN</button>
+        >{t.navbar.contactUs}</button>
+        <button onClick={toggleLocale}>{t.navbar.languageSwitch}</button>
       </div>
     </div>
     )

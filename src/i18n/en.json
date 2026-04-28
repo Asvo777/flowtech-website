@@ -1,0 +1,65 @@
+{
+  "navbar": {
+    "ariaBackToTop": "Back to top of page",
+    "contactUs": "Contact us",
+    "languageSwitch": "FR"
+  },
+  "home": {
+    "titlePrefix": "Experts in cleaning ducts and",
+    "titleCvac": "HVAC",
+    "subtitle": "Residential and commercial",
+    "qualityTitle": "Improve your indoor air quality",
+    "paragraph1": "The buildup of dust, mold, allergens and contaminants in your ducts can affect your health and reduce the energy efficiency of your systems. Regular duct maintenance not only improves indoor air quality, but also extends the lifespan of your equipment.",
+    "paragraph2": "At FlowTech, we provide specialized duct and heat pump cleaning services to deliver healthier air, better system performance and optimal energy efficiency. We use professional equipment and advanced techniques to remove dust, mold, allergens and contaminants accumulated in your ducts."
+  },
+  "services": {
+    "title": "Our services",
+    "items": [
+      "Residential air duct cleaning",
+      "Wall-mounted heat pump cleaning",
+      "HVAC inspection and maintenance",
+      "Indoor air quality improvement"
+    ],
+    "learnMore": "Learn more",
+    "whyChoose": "Why choose FlowTech?",
+    "reasons": [
+      "Professional and reliable service",
+      "State-of-the-art equipment",
+      "Visible and measurable results",
+      "Health and efficiency focused approach"
+    ]
+  },
+  "contact": {
+    "title": "Let's talk about your indoor air",
+    "intro": "Contact us today by phone or email to get a fast, no-obligation quote.",
+    "callFlowTech": "Call FlowTech",
+    "hoursTitle": "Opening hours",
+    "status": {
+      "open": "OPEN",
+      "appointmentOnly": "BY APPOINTMENT ONLY",
+      "closed": "CLOSED"
+    },
+    "days": {
+      "mondayToFriday": "Monday to Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "hours": {
+      "weekday": "8:00 AM to 8:00 PM",
+      "saturday": "By appointment",
+      "sunday": "Closed"
+    },
+    "messageTitle": "Send us a message",
+    "messageSent": "Message sent",
+    "form": {
+      "name": "Your name",
+      "email": "Your email address",
+      "message": "Your message",
+      "send": "Send"
+    }
+  },
+  "footer": {
+    "tagline": "Duct, heat pump and HVAC system cleaning.",
+    "copyright": "All rights reserved."
+  }
+}
