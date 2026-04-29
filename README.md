@@ -4,7 +4,7 @@ This repository contains the FlowTech company website built with React, TypeScri
 
 ## Current Website Content
 
-The website currently includes:
+The website currently include
 
 - A shared application layout with:
   - `Navbar` component at the top
