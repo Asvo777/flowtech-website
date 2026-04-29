@@ -1,4 +1,4 @@
-# FlowTech-Website
+# FlowTech Website
 
 This repository contains the FlowTech company website built with React, TypeScript, and Vite.
 
