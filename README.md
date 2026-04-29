@@ -57,3 +57,23 @@ npm run lint
 
 - This is an early scaffold of the FlowTech website.
 - Navbar, footer, and page sections are set up and ready to be filled with company content and styling.
+
+## Deploying to Vercel
+
+This project is ready to be deployed to Vercel using the static build output from Vite.
+
+Steps:
+
+1. Push the repository to a Git provider (GitHub, GitLab, or Bitbucket).
+2. In Vercel, create a new project and import this repository.
+3. Ensure the build command is `npm run build` and the output directory is `dist` (these are set automatically by `vercel.json`).
+4. Optionally set any environment variables in the Vercel dashboard.
+
+Local build preview:
+
+```bash
+npm install
+npm run build
+npm run preview
+```
+
