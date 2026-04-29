@@ -53,9 +53,9 @@
     "messageTitle": "Envoyez-nous un message",
     "messageSent": "Message envoyé",
     "form": {
-      "name": "Votre nom",
-      "email": "Votre adresse courriel",
-      "message": "Votre message",
+      "name": "Nom complet",
+      "email": "Adresse courriel",
+      "message": "Message",
       "send": "Envoyer"
     }
   },
